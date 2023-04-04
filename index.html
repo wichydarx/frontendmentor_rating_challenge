@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Overpass:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center;
+     }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <!-- Rating state start -->
+  <button id="show_rating_page">Rate us</button>
+  <div id="cont_1" class="container none">
+    
+    <span><i class="fa-solid fa-star"></i></span>
+    <h3 id="h3_1"> How did we do?</h3>
+
+    <p id="p_1">Please let us know how we did with your support request. All feedback is appreciated 
+      to help us improve our offering!
+    </p>
+      <ul>
+        <li>
+            <input type="radio" value="1" name="radios" id="radio1"/>
+            <label for="radio1">1</label>
+        </li>
+        <li>
+            <input type="radio" value="2" name="radios"  id="radio2"/>
+            <label for="radio2">2</label>
+        </li>
+        <li>
+            <input type="radio" value="3" name="radios"  id="radio3"/>
+            <label for="radio3">3</label>
+        </li>
+        <li>
+            <input type="radio" value="4" name="radios"  id="radio4"/>
+            <label for="radio4">4</label>
+        </li>
+        <li>
+            <input type="radio" value="5" name="radios"  id="radio5"/>
+            <label for="radio5">5</label>
+        </li>
+      </ul>
+    
+
+      <button id="submit" type="submit">SUBMIT</button>
+    
+      <p id="alert">Choose your Rating</p>
+    <!-- Rating state end -->
+  </div>
+  <!-- Thank you state start -->
+  <div id="cont_2" class="container none">
+    <img src="./images/illustration-thank-you.svg" alt="">
+
+      <!-- <p id="p_2"> You selected 4 out of 5</p> -->
+
+    <h3 id="h3_2">Thank you!</h3> 
+
+    <p id="p_3">
+        We appreciate you taking the time to give a rating. If you ever need more support, 
+         don’t hesitate to get in touch!
+    </p>
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">WICHMA CEROMAIN</a>
+    </div>
+  </div>
+  
+  <!-- Thank you state end -->
+
+  
+  
+  <script src="./main.js"></script>
+</body>
+</html>
